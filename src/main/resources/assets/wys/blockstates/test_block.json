@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wys:/block/test_block"
+    }
+  }
+}

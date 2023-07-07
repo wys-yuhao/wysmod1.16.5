@@ -1,0 +1,15 @@
+{
+  "itemGroup.wys_food": "§d§l五元素全明星幸运方块-食物",
+  "itemGroup.wys_prop": "§6§l五元素全明星幸运方块-道具",
+  "itemGroup.wys_weapon": "§d§l五元素全明星幸运方块-武器",
+  "itemGroup.wys_armor": "§e§l五元素全明星幸运方块-装备",
+  "itemGroup.wys_admin": "§c§l五元素全明星幸运方块-管理",
+  "effect.wys.flight": "§b飞行",
+  "item.wys.test_item": "测试物品",
+  "item.wys.test_prop": "测试道具",
+  "item.wys.test_sword": "测试武器",
+  "block.wys.test_block": "测试方块",
+  "item.wys.sweet_madame": "§a甜甜花酿鸡",
+  "item.wys.zero_purchase": "§6零元购",
+  "item.wys.wing": "§b翅膀"
+}
