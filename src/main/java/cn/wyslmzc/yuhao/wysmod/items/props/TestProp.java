@@ -1,4 +1,4 @@
-package cn.wyslmzc.yuhao.wysmod.items;
+package cn.wyslmzc.yuhao.wysmod.items.props;
 
 import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
 import net.minecraft.entity.player.PlayerEntity;

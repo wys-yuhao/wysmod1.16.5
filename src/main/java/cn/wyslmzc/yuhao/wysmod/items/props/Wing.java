@@ -1,4 +1,4 @@
-package cn.wyslmzc.yuhao.wysmod.items.runes;
+package cn.wyslmzc.yuhao.wysmod.items.props;
 
 import cn.wyslmzc.yuhao.wysmod.list.EffectsList;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;

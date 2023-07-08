@@ -1,18 +1,17 @@
 package cn.wyslmzc.yuhao.wysmod.list;
 
 import cn.wyslmzc.yuhao.wysmod.events.RegistryEvents;
-import cn.wyslmzc.yuhao.wysmod.items.TestProp;
-import cn.wyslmzc.yuhao.wysmod.items.ZeroPurchase;
-import cn.wyslmzc.yuhao.wysmod.items.runes.Wing;
-import net.minecraft.item.BlockItem;
+import cn.wyslmzc.yuhao.wysmod.items.foods.SweetMadame;
+import cn.wyslmzc.yuhao.wysmod.items.props.Wing;
+import cn.wyslmzc.yuhao.wysmod.items.props.ZeroPurchase;
 import net.minecraft.item.Item;
 
 import java.util.Map;
-import java.util.Objects;
 
 import static cn.wyslmzc.yuhao.wysmod.utils.Location.location;
 
 public class ItemList {
+    /*
     public static final Item test_item = new Item(new Item.Properties()
             .tab(TabList.adminGroup))
             .setRegistryName(location("test_item"));
@@ -22,8 +21,10 @@ public class ItemList {
     public static final Item test_prop = new TestProp(new Item.Properties()
             .tab(TabList.adminGroup))
             .setRegistryName(location("test_prop"));
+
+     */
     //甜甜花酿鸡
-    public static final Item sweet_madame = new Item(new Item.Properties()
+    public static final Item sweet_madame = new SweetMadame(new Item.Properties()
             .tab(TabList.foodGroup)
             .food(FoodList.sweet_madame))
             .setRegistryName(location("sweet_madame"));
@@ -41,9 +42,12 @@ public class ItemList {
 
 
     public static void init() {
+        /*
         itemList.put("test_item", test_item);
         itemList.put("test_block", test_block);
         itemList.put("test_prop", test_prop);
+
+         */
 
 
         itemList.put("sweet_madame", sweet_madame);
