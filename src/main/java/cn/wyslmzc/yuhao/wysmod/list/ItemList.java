@@ -17,10 +17,9 @@ public class ItemList {
             .food(FoodList.sweet_madame))
             .setRegistryName(location("sweet_madame"));
     private static final Map<String, Item> itemList = RegistryEvents.itemList;
-    private static final Item.Properties propProperties =
-            new Item.Properties()
-                    .tab(TabList.propGroup)
-                    .stacksTo(1);
+    private static final Item.Properties propProperties = new Item.Properties()
+            .tab(TabList.propGroup)
+            .stacksTo(1);
     //零元购
     public static final Item zero_purchase = new ZeroPurchase(propProperties)
             .setRegistryName(location("zero_purchase"));

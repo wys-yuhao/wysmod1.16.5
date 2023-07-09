@@ -3,18 +3,16 @@ package cn.wyslmzc.yuhao.wysmod.utils;
 import cn.wyslmzc.yuhao.wysmod.WysMod;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.function.Supplier;
 
-public enum ArmorTier implements IArmorMaterial {
-
+public class ArmorTier implements IArmorMaterial {
+    /*
     Inf("inf",
             37,
             new int[]{3, 6, 8, 3},
@@ -26,6 +24,7 @@ public enum ArmorTier implements IArmorMaterial {
                 return Ingredient.of(Items.AIR);
             }
     );
+    */
 
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
@@ -38,7 +37,7 @@ public enum ArmorTier implements IArmorMaterial {
     private final float knockbackResistance;
     private final LazyValue<Ingredient> repairIngredient;
 
-    private ArmorTier(String name, int durabilityMultiplier, int[] slotProtections, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    public ArmorTier(String name, int durabilityMultiplier, int[] slotProtections, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.slotProtections = slotProtections;

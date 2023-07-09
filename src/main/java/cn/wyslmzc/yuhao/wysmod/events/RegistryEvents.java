@@ -21,7 +21,6 @@ import java.util.Map;
 public class RegistryEvents {
     public static final Logger logger = WysMod.LOGGER;
     public static Map<String, Item> itemList = new HashMap<>();
-    public static Map<String, Item> armorList = new HashMap<>();
     public static Map<String, Block> blockMap = new HashMap<>();
     public static Map<String, Effect> effectMap = new HashMap<>();
     public static Map<ResourceLocation, SoundEvent> sounds = new HashMap<>();
@@ -31,6 +30,7 @@ public class RegistryEvents {
         //初始化item列表
         ItemList.init();
         SwordList.init();
+        ArmorList.init();
 
         //遍历注册
         for (String name : itemList.keySet()) {
