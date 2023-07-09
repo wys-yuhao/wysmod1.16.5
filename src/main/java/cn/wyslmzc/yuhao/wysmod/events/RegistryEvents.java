@@ -21,6 +21,7 @@ import java.util.Map;
 public class RegistryEvents {
     public static final Logger logger = WysMod.LOGGER;
     public static Map<String, Item> itemList = new HashMap<>();
+    public static Map<String, Item> armorList = new HashMap<>();
     public static Map<String, Block> blockMap = new HashMap<>();
     public static Map<String, Effect> effectMap = new HashMap<>();
     public static Map<ResourceLocation, SoundEvent> sounds = new HashMap<>();

@@ -11,18 +11,6 @@ import java.util.Map;
 import static cn.wyslmzc.yuhao.wysmod.utils.Location.location;
 
 public class ItemList {
-    /*
-    public static final Item test_item = new Item(new Item.Properties()
-            .tab(TabList.adminGroup))
-            .setRegistryName(location("test_item"));
-    public static final Item test_block = new BlockItem(BlockList.test_block,
-            new Item.Properties().tab(TabList.adminGroup))
-            .setRegistryName(Objects.requireNonNull(BlockList.test_block.getRegistryName()));
-    public static final Item test_prop = new TestProp(new Item.Properties()
-            .tab(TabList.adminGroup))
-            .setRegistryName(location("test_prop"));
-
-     */
     //甜甜花酿鸡
     public static final Item sweet_madame = new SweetMadame(new Item.Properties()
             .tab(TabList.foodGroup)
@@ -42,14 +30,6 @@ public class ItemList {
 
 
     public static void init() {
-        /*
-        itemList.put("test_item", test_item);
-        itemList.put("test_block", test_block);
-        itemList.put("test_prop", test_prop);
-
-         */
-
-
         itemList.put("sweet_madame", sweet_madame);
         itemList.put("zero_purchase", zero_purchase);
         itemList.put("wing", wing);

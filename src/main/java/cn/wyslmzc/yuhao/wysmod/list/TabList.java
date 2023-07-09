@@ -2,6 +2,7 @@ package cn.wyslmzc.yuhao.wysmod.list;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 
 public class TabList {
     public static final ItemGroup adminGroup = new AdminGroup("wys_admin");
@@ -18,7 +19,7 @@ public class TabList {
 
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ItemList.test_item);
+            return new ItemStack(ItemStack.EMPTY.getItem());
         }
     }
 
@@ -40,7 +41,7 @@ public class TabList {
 
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(SwordList.test_sword);
+            return new ItemStack(Items.DIAMOND_SWORD);
         }
     }
 
