@@ -1,14 +1,18 @@
 {
+  "type": "tabs",
   "itemGroup.wys_food": "§d§l五元素全明星幸运方块-食物",
   "itemGroup.wys_prop": "§6§l五元素全明星幸运方块-道具",
   "itemGroup.wys_weapon": "§d§l五元素全明星幸运方块-武器",
   "itemGroup.wys_armor": "§e§l五元素全明星幸运方块-装备",
   "itemGroup.wys_admin": "§c§l五元素全明星幸运方块-管理",
+  "type1": "药水效果",
   "effect.wys.flight": "§b飞行",
   "effect.wys.upsetting": "§b打乱背包",
+  "type2": "物品",
   "item.wys.team_red": "§a团队-加入§c红队",
   "item.wys.team_blue": "§a团队-加入§b蓝队",
   "item.wys.sweet_madame": "§a甜甜花酿鸡",
   "item.wys.zero_purchase": "§6零元购",
-  "item.wys.wing": "§b翅膀"
+  "item.wys.wing": "§b翅膀",
+  "item.wys.rune_wither": "§7凋零§a符文"
 }
