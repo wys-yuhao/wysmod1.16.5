@@ -6,10 +6,8 @@
   "itemGroup.wys_admin": "§c§l五元素全明星幸运方块-管理",
   "effect.wys.flight": "§b飞行",
   "effect.wys.upsetting": "§b打乱背包",
-  "item.wys.test_item": "测试物品",
-  "item.wys.test_prop": "测试道具",
-  "item.wys.test_sword": "测试武器",
-  "block.wys.test_block": "测试方块",
+  "item.wys.team_red": "§a团队-加入§c红队",
+  "item.wys.team_blue": "§a团队-加入§b蓝队",
   "item.wys.sweet_madame": "§a甜甜花酿鸡",
   "item.wys.zero_purchase": "§6零元购",
   "item.wys.wing": "§b翅膀"

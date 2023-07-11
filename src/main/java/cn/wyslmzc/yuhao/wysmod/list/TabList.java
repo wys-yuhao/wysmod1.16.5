@@ -19,7 +19,7 @@ public class TabList {
 
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ItemStack.EMPTY.getItem());
+            return new ItemStack(ItemList.team_red);
         }
     }
 
@@ -52,7 +52,7 @@ public class TabList {
 
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ItemList.sweet_madame);
+            return new ItemStack(Items.DIAMOND_HELMET);
         }
     }
 

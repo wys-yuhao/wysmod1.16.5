@@ -53,4 +53,14 @@ public class PropUtils {
         }
     }
 
+    public static void runCommand(PlayerEntity player, String cmd) {
+        World world = player.level;
+        if (world.isClientSide) {
+            return;
+        }
+        MinecraftServer server = Objects.requireNonNull(world.getServer());
+        server.getCommands().performCommand(player.createCommandSourceStack(), cmd);
+
+    }
+
 }
