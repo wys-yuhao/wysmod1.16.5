@@ -14,5 +14,11 @@
   "item.wys.sweet_madame": "§a甜甜花酿鸡",
   "item.wys.zero_purchase": "§6零元购",
   "item.wys.wing": "§b翅膀",
-  "item.wys.rune_wither": "§7凋零§a符文"
+  "item.wys.rune_wither": "§a凋零符文",
+  "item.wys.rune_speed": "§a速度符文",
+  "type3": "装备",
+  "item.wys.crystal_feet": "§b水晶套-脚",
+  "item.wys.crystal_legs": "§b水晶套-腿",
+  "item.wys.crystal_chest": "§b水晶套-胸",
+  "item.wys.crystal_head": "§b水晶套-头"
 }

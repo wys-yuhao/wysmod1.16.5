@@ -6,6 +6,7 @@ import cn.wyslmzc.yuhao.wysmod.items.adminItems.JoinRedTeam;
 import cn.wyslmzc.yuhao.wysmod.items.foods.SweetMadame;
 import cn.wyslmzc.yuhao.wysmod.items.props.Wing;
 import cn.wyslmzc.yuhao.wysmod.items.props.ZeroPurchase;
+import cn.wyslmzc.yuhao.wysmod.items.props.runes.Speed;
 import cn.wyslmzc.yuhao.wysmod.items.props.runes.Wither;
 import net.minecraft.item.Item;
 
@@ -42,6 +43,9 @@ public class ItemList {
     //凋零符文
     public static final Item rune_wither = new Wither(propProperties)
             .setRegistryName(location("rune_wither"));
+    //速度符文
+    public static final Item rune_speed = new Speed(propProperties)
+            .setRegistryName(location("rune_speed"));
 
 
     public static void init() {
@@ -51,5 +55,6 @@ public class ItemList {
         itemList.put("zero_purchase", zero_purchase);
         itemList.put("wing", wing);
         itemList.put("rune_wither", rune_wither);
+        itemList.put("rune_speed", rune_speed);
     }
 }
