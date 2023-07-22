@@ -17,10 +17,10 @@ public class ArmorList {
 
     public static void init() {
         List<String> crystal_tooltip = new ArrayList<>();
-        crystal_tooltip.add("生命值+25");
+        crystal_tooltip.add("生命值+50");
         List<String> crystal_info = new ArrayList<>();
         crystal_info.add("材质来自1.8.9幸运方块扩展");
-        crystal = new ArmorSuit("crystal", 100, crystal_tooltip, crystal_info);
+        crystal = new ArmorSuit("crystal", 800, 0, 0, crystal_tooltip, crystal_info);
 
         itemList.put(crystal.getName(EquipmentSlotType.HEAD), crystal.getHelmet());
         itemList.put(crystal.getName(EquipmentSlotType.CHEST), crystal.getChestPlate());

@@ -16,9 +16,16 @@
   "item.wys.wing": "§b翅膀",
   "item.wys.rune_wither": "§a凋零符文",
   "item.wys.rune_speed": "§a速度符文",
+  "item.wys.rune_invisibility": "§7隐身符文",
+  "item.wys.rune_strength": "§c力量符文",
+  "item.wys.rune_resistance": "§6抗性符文",
+  "item.wys.rune_regeneration": "§d生命符文",
+  "item.wys.stand_liushang": "§d替身-流殇",
+  "item.wys.stand_yuhao": "§d替身-宇豪",
+  "item.wys.stand_xiaochao": "§d替身-小炒",
   "type3": "装备",
   "item.wys.crystal_feet": "§b水晶套-脚",
-  "item.wys.crystal_legs": "§b水晶套-腿",
+  "item.wys.crystal_legging": "§b水晶套-腿",
   "item.wys.crystal_chest": "§b水晶套-胸",
-  "item.wys.crystal_head": "§b水晶套-头"
+  "item.wys.crystal_helmet": "§b水晶套-头"
 }

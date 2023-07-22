@@ -21,7 +21,12 @@ public class EffectsEvent {
         if (player.hasEffect(EffectsList.flight)) {
             player.abilities.mayfly = true;
         } else {
-            if (player.isCreative() & player.isSpectator()) {
+            if (player.isCreative()) {
+                player.abilities.mayfly = true;
+                return;
+            }
+            if (player.isSpectator()) {
+                player.abilities.mayfly = true;
                 return;
             }
             player.abilities.mayfly = false;
