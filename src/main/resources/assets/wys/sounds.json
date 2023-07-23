@@ -4,5 +4,23 @@
       "wys:zero_purchase"
     ],
     "subtitle": "零元购"
+  },
+  "haoziweizhi": {
+    "sounds": [
+      "wys:haoziweizhi"
+    ],
+    "subtitle": "耗子尾汁"
+  },
+  "redeye": {
+    "sounds": [
+      "wys:redeye"
+    ],
+    "subtitle": "红眼"
+  },
+  "wuguang_v2": {
+    "sounds": [
+      "wys:wuguang_v2"
+    ],
+    "subtitle": "两只老虎爱跳舞"
   }
 }

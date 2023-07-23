@@ -28,6 +28,7 @@ public class ZeroPurchase extends Item {
         Tooltip tip = new Tooltip(tooltip);
 
         tip.addTip("§a使用后进入创造模式三秒，随心所欲的\"购物\"");
+        tip.addTip("§c注:请勿套娃(拿取零元购)");
         tip.addInfo("§e《军火出示》");
         tip.addInfo("§e《百亿补贴》");
         tip.addInfo("§e《0元抢购》");

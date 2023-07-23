@@ -4,12 +4,9 @@ import cn.wyslmzc.yuhao.wysmod.events.RegistryEvents;
 import cn.wyslmzc.yuhao.wysmod.items.adminItems.JoinBlueTeam;
 import cn.wyslmzc.yuhao.wysmod.items.adminItems.JoinRedTeam;
 import cn.wyslmzc.yuhao.wysmod.items.foods.SweetMadame;
-import cn.wyslmzc.yuhao.wysmod.items.props.HaoZiWeiZhi;
-import cn.wyslmzc.yuhao.wysmod.items.props.Wing;
-import cn.wyslmzc.yuhao.wysmod.items.props.ZeroPurchase;
-import cn.wyslmzc.yuhao.wysmod.items.props.offhandItems.StandBase;
+import cn.wyslmzc.yuhao.wysmod.items.props.*;
+import cn.wyslmzc.yuhao.wysmod.items.props.attributeItems.*;
 import cn.wyslmzc.yuhao.wysmod.items.props.runes.*;
-import cn.wyslmzc.yuhao.wysmod.items.props.test;
 import net.minecraft.item.Item;
 
 import java.util.Map;
@@ -61,17 +58,57 @@ public class ItemList {
     public static final Item rune_regeneration = new Regeneration(propProperties)
             .setRegistryName(location("rune_regeneration"));
     //ls替身
-    public static final Item stand_liushang = new StandBase(propProperties)
+    public static final Item stand_liushang = new Stand(propProperties)
             .setRegistryName(location("stand_liushang"));
     //yh替身
-    public static final Item stand_yuhao = new StandBase(propProperties)
+    public static final Item stand_yuhao = new Stand(propProperties)
             .setRegistryName(location("stand_yuhao"));
     //xc替身
-    public static final Item stand_xiaochao = new StandBase(propProperties)
+    public static final Item stand_xiaochao = new Stand(propProperties)
             .setRegistryName(location("stand_xiaochao"));
-    //xc替身
+    //好自为之
     public static final Item haoziweizhi = new HaoZiWeiZhi(propProperties)
             .setRegistryName(location("haoziweizhi"));
+    //红眼
+    public static final Item redeye = new RedEye(propProperties)
+            .setRegistryName(location("redeye"));
+    //乾坤大挪移
+    public static final Item qiankundanuoyi = new QianKunDaNuoYi(propProperties)
+            .setRegistryName(location("qiankundanuoyi"));
+    //起爆符
+    public static final Item qibaofu = new QiBaoFu(propProperties)
+            .setRegistryName(location("qibaofu"));
+    //两只老虎爱跳舞
+    public static final Item wuguang_v2 = new WuGuang_v2(propProperties)
+            .setRegistryName(location("wuguang_v2"));
+    //月读
+    public static final Item yuedu = new YueDu(propProperties)
+            .setRegistryName(location("yuedu"));
+    //斑 须佐能乎
+    public static final Item xuzuogujia_ban = new XuZuo_Gujia(propProperties, "§l我斑愿称你为最强!")
+            .setRegistryName(location("xuzuogujia_ban"));
+    //鼬 须佐能乎
+    public static final Item xuzuogujia_you = new XuZuo_Gujia(propProperties, "§4§l你的写轮眼能看多远呢？")
+            .setRegistryName(location("xuzuogujia_you"));
+    //佐助 须佐能乎
+    public static final Item xuzuogujia_zuozhu = new XuZuo_Gujia(propProperties, "§lあの男を殺したいです")
+            .setRegistryName(location("xuzuogujia_zuozhu"));
+    //斑 须佐能乎 半全体
+    public static final Item xuzuobanquanti_ban = new XuZuo_BanQuanTi(propProperties, "§l原谅我佐助！这是最后一次了...")
+            .setRegistryName(location("xuzuobanquanti_ban"));
+    //鼬 须佐能乎 半全体
+    public static final Item xuzuobanquanti_you = new XuZuo_BanQuanTi(propProperties, "§l绝望吧，这就是宇智波斑！神的力量！")
+            .setRegistryName(location("xuzuobanquanti_you"));
+    //佐助 须佐能乎 半全体
+    public static final Item xuzuobanquanti_zuozhu = new XuZuo_BanQuanTi(propProperties, "§l当你觉得友谊是个愚蠢的东西\n" +
+            "那你肯定是一个彻头彻尾的笨蛋！\n" +
+            "当你失去友谊的时候你才会觉得可怜\n" +
+            "那都是你们这些不懂的友谊的后果\n" +
+            "也许我也就这样傻过\n")
+            .setRegistryName(location("xuzuobanquanti_zuozhu"));
+    //求道玉
+    public static final Item qiudaoyu = new QiuDaoYu(propProperties)
+            .setRegistryName(location("qiudaoyu"));
     /*
     //luckyblock
     public static final Item luckyblock = new BlockItem(BlockList.luckyblock, adminProperties)
@@ -99,6 +136,18 @@ public class ItemList {
         itemList.put("stand_yuhao", stand_yuhao);
         itemList.put("stand_xiaochao", stand_xiaochao);
         itemList.put("haoziweizhi", haoziweizhi);
+        itemList.put("redeye", redeye);
+        itemList.put("qiankundanuoyi", qiankundanuoyi);
+        itemList.put("qibaofu", qibaofu);
+        itemList.put("wuguang_v2", wuguang_v2);
+        itemList.put("yuedu", yuedu);
+        itemList.put("xuzuogujia_ban", xuzuogujia_ban);
+        itemList.put("xuzuogujia_you", xuzuogujia_you);
+        itemList.put("xuzuogujia_zuozhu", xuzuogujia_zuozhu);
+        itemList.put("xuzuobanquanti_ban", xuzuobanquanti_ban);
+        itemList.put("xuzuobanquanti_you", xuzuobanquanti_you);
+        itemList.put("xuzuobanquanti_zuozhu", xuzuobanquanti_zuozhu);
+        itemList.put("qiudaoyu", qiudaoyu);
         //itemList.put("luckyblock", luckyblock);
         itemList.put("test", test);
     }

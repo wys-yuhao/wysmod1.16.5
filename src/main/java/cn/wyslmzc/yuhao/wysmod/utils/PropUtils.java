@@ -57,6 +57,18 @@ public class PropUtils {
         }
     }
 
+    public static void actionBarTitle(World world, PlayerEntity player, String text) {
+        if (!world.isClientSide) {
+            MinecraftServer server = Objects.requireNonNull(world.getServer());
+            server.getCommands().performCommand(
+                    world.getServer().createCommandSourceStack(),
+                    "title @a reset");
+            server.getCommands().performCommand(
+                    world.getServer().createCommandSourceStack(),
+                    "title @a actionbar [{\"text\":\"" + text + " \"}]");
+        }
+    }
+
     public static void tellRaw(World world, String text) {
         if (!world.isClientSide) {
             MinecraftServer server = Objects.requireNonNull(world.getServer());
@@ -76,8 +88,8 @@ public class PropUtils {
                     Vector2f.ZERO,
                     serverworld,
                     4,
-                    "#COMMAND#",
-                    new StringTextComponent("#COMMAND#"),
+                    "Server",
+                    new StringTextComponent("Server"),
                     server,
                     (Entity) null);
 

@@ -27,7 +27,7 @@ public class HaoZiWeiZhi extends Item {
     public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> tooltip, ITooltipFlag p_77624_4_) {
         Tooltip tip = new Tooltip(tooltip);
 
-        tip.addTip("§a获得飞行Buff|60s");
+        tip.addTip("§a获得飞行Buff | 60s");
         tip.addInfo("§e我是混元形意太极门掌门人马宝国，刚才有个朋友问我马老师发生肾摸事了，我说怎么回事？给我发了几张截图，我一看！\n" +
                 "嗷！原来是昨天，有两个年轻人，30多岁，一个体重90多公斤，一个体重80多公斤。\n" +
                 "塔们说，诶…有一个说是我在健身房练功，颈椎练坏了，马老师你能不能教教我混元功法？诶…帮助治疗一下，我的颈椎病。\n" +
@@ -62,9 +62,9 @@ public class HaoZiWeiZhi extends Item {
             playerEntity.playSound(SoundsList.haoziweizhi, 1.0f, 1.0f);
         }
 
-        player.addEffect(new EffectInstance(EffectsList.flight, 60, 1, true, true));
+        player.addEffect(new EffectInstance(EffectsList.flight, 1200, 0, true, true));
 
-        PropUtils.title(playerWorld, "§b§l偷袭!", "耗子尾汁");
+        PropUtils.title(playerWorld, "   §b偷袭!   ", "耗子尾汁");
 
         return ActionResult.pass(itemstack);
     }

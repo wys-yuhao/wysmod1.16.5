@@ -1,0 +1,83 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "wys:item/redeye"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        98.25,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        1.75,
+        0
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        98.25,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        1.75,
+        0
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        1.25,
+        3.75,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        1.25,
+        3.75,
+        0
+      ]
+    },
+    "gui": {
+      "translation": [
+        0,
+        1.5,
+        0
+      ],
+      "scale": [
+        4,
+        4,
+        0
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        0,
+        55
+      ],
+      "translation": [
+        -3,
+        -1.25,
+        -6.5
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    },
+    "fixed": {
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    }
+  }
+}
