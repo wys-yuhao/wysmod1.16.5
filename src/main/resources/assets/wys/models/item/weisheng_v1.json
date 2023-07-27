@@ -1,0 +1,93 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "wys:item/weisheng_v1"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        8,
+        1.5
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        68,
+        -180,
+        0
+      ],
+      "translation": [
+        -6,
+        6.75,
+        49
+      ],
+      "scale": [
+        4,
+        4,
+        0
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        2.5,
+        3.5,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        2.5,
+        3.5,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        5.75,
+        0
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "translation": [
+        0,
+        38.75,
+        0
+      ],
+      "scale": [
+        4,
+        4,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        -0.5
+      ]
+    }
+  }
+}

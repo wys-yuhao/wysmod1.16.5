@@ -26,6 +26,5 @@ public class ArmorList {
         itemList.put(crystal.getName(EquipmentSlotType.CHEST), crystal.getChestPlate());
         itemList.put(crystal.getName(EquipmentSlotType.LEGS), crystal.getLegging());
         itemList.put(crystal.getName(EquipmentSlotType.FEET), crystal.getFeet());
-
     }
 }

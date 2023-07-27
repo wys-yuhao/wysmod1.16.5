@@ -15,14 +15,17 @@ public class SoundsList {
     public static SoundEvent haoziweizhi = new SoundEvent(new ResourceLocation("wys", "haoziweizhi"));
     static ResourceLocation RL_haoziweizhi = new ResourceLocation("wys", "haoziweizhi");
     public static SoundEvent redeye = new SoundEvent(new ResourceLocation("wys", "redeye"));
+    public static SoundEvent flash = new SoundEvent(new ResourceLocation("wys", "flash"));
     public static SoundEvent wuguang_v2 = new SoundEvent(new ResourceLocation("wys", "wuguang_v2"));
-    static ResourceLocation RL_redeye = new ResourceLocation("wys", "redeye");
     static ResourceLocation RL_wuguang_v2 = new ResourceLocation("wys", "wuguang_v2");
+    static ResourceLocation RL_redeye = new ResourceLocation("wys", "redeye");
+    static ResourceLocation RL_flash = new ResourceLocation("wys", "flash");
 
     public static void init() {
         sounds.put(RL_zero_purchase, zero_purchase);
         sounds.put(RL_haoziweizhi, haoziweizhi);
         sounds.put(RL_redeye, redeye);
         sounds.put(RL_wuguang_v2, wuguang_v2);
+        sounds.put(RL_flash, flash);
     }
 }

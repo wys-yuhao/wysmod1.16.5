@@ -109,14 +109,26 @@ public class ItemList {
     //求道玉
     public static final Item qiudaoyu = new QiuDaoYu(propProperties)
             .setRegistryName(location("qiudaoyu"));
-    /*
-    //luckyblock
-    public static final Item luckyblock = new BlockItem(BlockList.luckyblock, adminProperties)
-            .setRegistryName(Objects.requireNonNull(BlockList.luckyblock.getRegistryName()));
-
-     */
+    //求道玉
+    public static final Item flash = new Flash(propProperties)
+            .setRegistryName(location("flash"));
+    //尸鬼封尽
+    public static final Item shiguifengjin = new ShiGuiFengJin(propProperties)
+            .setRegistryName(location("shiguifengjin"));
+    //艺术就是爆炸
+    public static final Item wuguang_v1 = new WuGuang_v1(propProperties)
+            .setRegistryName(location("wuguang_v1"));
+    //伪神的痛
+    public static final Item weisheng_v1 = new WeiSheng_v1(propProperties)
+            .setRegistryName(location("weisheng_v1"));
+    //无懈可击
+    public static final Item wuxiekeji = new WuXieKeJi(propProperties)
+            .setRegistryName(location("wuxiekeji"));
+    //手办集合
+    public static final Item stand_all = new StandCollections(propProperties)
+            .setRegistryName(location("stand_all"));
     //测试
-    public static final Item test = new test(new Item.Properties().tab(TabList.adminGroup).stacksTo(1))
+    public static final Item test = new test(new Item.Properties().stacksTo(1))
             .setRegistryName(location("test"));
 
 
@@ -148,7 +160,12 @@ public class ItemList {
         itemList.put("xuzuobanquanti_you", xuzuobanquanti_you);
         itemList.put("xuzuobanquanti_zuozhu", xuzuobanquanti_zuozhu);
         itemList.put("qiudaoyu", qiudaoyu);
-        //itemList.put("luckyblock", luckyblock);
+        itemList.put("flash", flash);
+        itemList.put("shiguifengjin", shiguifengjin);
+        itemList.put("wuguang_v1", wuguang_v1);
+        itemList.put("weisheng_v1", weisheng_v1);
+        itemList.put("wuxiekeji", wuxiekeji);
+        itemList.put("stand_all", stand_all);
         itemList.put("test", test);
     }
 }

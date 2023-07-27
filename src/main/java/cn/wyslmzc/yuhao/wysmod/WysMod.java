@@ -1,6 +1,5 @@
 package cn.wyslmzc.yuhao.wysmod;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -30,7 +29,6 @@ public class WysMod {
 
     }
 
-    @SubscribeEvent
     private void onServerStarting(final FMLServerStartingEvent event) {
 
     }

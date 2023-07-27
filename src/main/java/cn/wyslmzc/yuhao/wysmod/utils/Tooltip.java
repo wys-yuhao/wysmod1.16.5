@@ -29,6 +29,7 @@ public class Tooltip {
                 tooltip.add(new StringTextComponent(s));
             }
             tooltip.add(new StringTextComponent("§b§m§l=============================="));
+            tooltip.add(new StringTextComponent("§7松开 SHIFT 隐藏信息"));
         } else {
             tooltip.add(new StringTextComponent("§7按下 SHIFT 显示更多"));
         }

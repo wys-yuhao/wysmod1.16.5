@@ -22,5 +22,11 @@
       "wys:wuguang_v2"
     ],
     "subtitle": "两只老虎爱跳舞"
+  },
+  "flash": {
+    "sounds": [
+      "wys:flash"
+    ],
+    "subtitle": "闪现"
   }
 }

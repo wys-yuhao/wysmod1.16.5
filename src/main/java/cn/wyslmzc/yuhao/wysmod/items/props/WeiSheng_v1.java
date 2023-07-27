@@ -14,9 +14,9 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class YueDu extends Item {
+public class WeiSheng_v1 extends Item {
 
-    public YueDu(Properties p_i48487_1_) {
+    public WeiSheng_v1(Properties p_i48487_1_) {
         super(p_i48487_1_);
     }
 
@@ -24,8 +24,8 @@ public class YueDu extends Item {
     public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> tooltip, ITooltipFlag p_77624_4_) {
         Tooltip tip = new Tooltip(tooltip);
 
-        tip.addTip("§a给予敌方玩家失明和缓慢II | 5s");
-        tip.addInfo("§e(つくよみ)");
+        tip.addTip("§a恶心敌方玩家");
+        tip.addInfo("§c伪神の痛你懂吗？");
 
         tip.show();
 
@@ -39,13 +39,12 @@ public class YueDu extends Item {
 
         player.setItemInHand(hand, ItemStack.EMPTY);
 
-        PropUtils.runCommand(player, "execute as @s[team=blue] at @s run execute as @a[team=red] at @s run effect give @s slowness 5 3");
-        PropUtils.runCommand(player, "execute as @s[team=blue] at @s run execute as @a[team=red] at @s run effect give @s blindness 5 1");
-        PropUtils.runCommand(player, "execute as @s[team=red] at @s run execute as @a[team=blue] at @s run effect give @s slowness 5 3");
-        PropUtils.runCommand(player, "execute as @s[team=red] at @s run execute as @a[team=blue] at @s run effect give @s blindness 5 1");
+        PropUtils.runCommand(player, "execute as @s[team=blue] at @s run execute as @a[team=red] at @s run effect give @s blindness 6 4");
+        PropUtils.runCommand(player, "execute as @s[team=red] at @s run execute as @a[team=blue] at @s run effect give @s wither 6 2");
+        PropUtils.runCommand(player, "execute as @s[team=blue] at @s run execute as @a[team=red] at @s run effect give @s blindness 6 4");
+        PropUtils.runCommand(player, "execute as @s[team=red] at @s run execute as @a[team=blue] at @s run effect give @s wither 6 2");
 
-
-        PropUtils.title(playerWorld, player, "§5月读");
+        PropUtils.title(playerWorld, player, "§c感受我的痛吧！！！！");
 
         return ActionResult.pass(itemstack);
     }

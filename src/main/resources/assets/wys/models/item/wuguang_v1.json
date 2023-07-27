@@ -1,0 +1,73 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "wys:item/wuguang_v1"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        7.25,
+        0
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        68,
+        -180,
+        0
+      ],
+      "translation": [
+        -6.25,
+        3.75,
+        27.25
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        2.25,
+        3.75,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        2.25,
+        3.75,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        5.5,
+        0
+      ]
+    },
+    "gui": {
+      "translation": [
+        0,
+        0.5,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        15.75,
+        0
+      ]
+    }
+  }
+}

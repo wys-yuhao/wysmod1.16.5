@@ -36,8 +36,8 @@ public class RuneBase extends Item {
         if (self) {
             PropUtils.runCommand(player.level, "effect give " + playerName + " " + effect + " 1 " + level);
         } else {
-            PropUtils.runCommand(player, "execute as " + playerName + "[team=blue] at " + playerName + " run execute as @a[distance=0..8,team=red] at @s run effect give @s " + effect + " 1 " + level);
-            PropUtils.runCommand(player, "execute as " + playerName + "[team=red] at " + playerName + " run execute as @a[distance=0..8,team=blue] at @s run effect give @s " + effect + " 1 " + level);
+            PropUtils.runCommand(player, "execute as @s[team=blue] at " + playerName + " run execute as @a[distance=0..8,team=red] at @s run effect give @s " + effect + " 1 " + level);
+            PropUtils.runCommand(player, "execute as @s[team=red] at " + playerName + " run execute as @a[distance=0..8,team=blue] at @s run effect give @s " + effect + " 1 " + level);
         }
         super.inventoryTick(itemStack, world, player, p_77663_4_, p_77663_5_);
     }

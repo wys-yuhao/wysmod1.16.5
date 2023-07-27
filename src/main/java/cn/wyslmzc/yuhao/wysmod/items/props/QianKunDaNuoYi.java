@@ -43,7 +43,7 @@ public class QianKunDaNuoYi extends Item {
 
         player.setItemInHand(hand, ItemStack.EMPTY);
 
-        PropUtils.title(playerWorld, " §b乾坤大挪移! ");
+        PropUtils.title(playerWorld, player, " §b乾坤大挪移! ");
         player.teleportTo(player.position().x, player.position().y + 10, player.position().z);
         PropUtils.runCommand(player, "fill ~1 ~-2 ~1 ~-1 ~-2 ~-1 slime_block replace air");
         PropUtils.runCommand(player, "summon minecraft:area_effect_cloud ~ ~1 ~ {Tags:[\"qkdny\"],CustomNameVisible:0b,NoAI:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Age:0,Duration:2200,Color:0,Radius:0}");
