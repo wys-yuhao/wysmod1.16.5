@@ -16,7 +16,6 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -24,8 +23,7 @@ public class ArmorSuit {
     public String name;
     public int health;
     public int armorToughness;
-    public List<String> tooltip = new ArrayList<>();
-    public List<String> info = new ArrayList<>();
+    public List<String> tooltip;
     ArmorTier tier;
 
     public Armor helmet;
@@ -33,12 +31,11 @@ public class ArmorSuit {
     public Armor legs;
     public Armor feet;
 
-    public ArmorSuit(String name, int health, int armor, int armorToughness, List<String> tooltip, List<String> info) {
+    public ArmorSuit(String name, int health, int armor, int armorToughness, List<String> tooltip) {
         this.name = name;
         this.health = health;
         this.armorToughness = armorToughness / 4;
         this.tooltip = tooltip;
-        this.info = info;
         int armors = armor / 4;
 
         this.tier = new ArmorTier(name,
@@ -114,9 +111,11 @@ public class ArmorSuit {
             for (String s : ArmorSuit.this.tooltip) {
                 tip.addTip("§a" + s);
             }
+
+            /*
             for (String s : info) {
                 tip.addInfo("§e" + s);
-            }
+            }*/
 
             tip.show();
 
@@ -126,7 +125,7 @@ public class ArmorSuit {
         @Override
         public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot, ItemStack stack) {
             stack.addAttributeModifier(Attributes.MAX_HEALTH, new AttributeModifier(UUID.randomUUID(), "Max health", (double) health / 4, AttributeModifier.Operation.ADDITION), slotType);
-            stack.addTagElement("HideFlags", IntNBT.valueOf(63));
+            stack.addTagElement("HideFlags", IntNBT.valueOf(2));
             return ArrayListMultimap.create();
         }
     }

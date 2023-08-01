@@ -5,6 +5,8 @@ import net.minecraft.command.CommandSource;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Effect;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.util.math.vector.Vector3d;
@@ -117,5 +119,9 @@ public class PropUtils {
             }
         }
         return a == 4;
+    }
+
+    public static void addEffect(PlayerEntity player, Effect effect, int sec, int level) {
+        player.addEffect(new EffectInstance(effect, sec * 20, level - 1, true, true));
     }
 }

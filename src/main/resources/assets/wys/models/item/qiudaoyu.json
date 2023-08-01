@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "wys:items/qiudaoyu",
-    "particle": "wys:items/qiudaoyu"
+    "0": "wys:item/qiudaoyu",
+    "particle": "wys:item/qiudaoyu"
   },
   "elements": [
     {

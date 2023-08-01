@@ -12,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 public class WysMod {
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String modId = "wys";
+    public static final VauleInstance ValueInstance = new VauleInstance();
     public static WysMod INSTANCE;
 
     public WysMod() {
