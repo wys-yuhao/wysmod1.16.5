@@ -1,0 +1,86 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "wys:item/xingkongfu"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        63,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        18,
+        7.5
+      ],
+      "scale": [
+        2,
+        2,
+        1
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        63,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        18,
+        7.5
+      ],
+      "scale": [
+        -2,
+        2,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        24,
+        77,
+        0
+      ],
+      "translation": [
+        2.5,
+        8.75,
+        -0.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        24,
+        77,
+        0
+      ],
+      "translation": [
+        2.5,
+        8.75,
+        -0.5
+      ],
+      "scale": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        5,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        17.25,
+        0
+      ]
+    }
+  }
+}

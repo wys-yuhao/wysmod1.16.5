@@ -18,8 +18,10 @@ public class SoundsList {
     public static SoundEvent flash = new SoundEvent(new ResourceLocation("wys", "flash"));
     public static SoundEvent wuguang_v2 = new SoundEvent(new ResourceLocation("wys", "wuguang_v2"));
     static ResourceLocation RL_wuguang_v2 = new ResourceLocation("wys", "wuguang_v2");
-    static ResourceLocation RL_redeye = new ResourceLocation("wys", "redeye");
+    public static SoundEvent aoligei = new SoundEvent(new ResourceLocation("wys", "aoligei"));
     static ResourceLocation RL_flash = new ResourceLocation("wys", "flash");
+    static ResourceLocation RL_redeye = new ResourceLocation("wys", "redeye");
+    static ResourceLocation RL_aoligei = new ResourceLocation("wys", "aoligei");
 
     public static void init() {
         sounds.put(RL_zero_purchase, zero_purchase);
@@ -27,5 +29,6 @@ public class SoundsList {
         sounds.put(RL_redeye, redeye);
         sounds.put(RL_wuguang_v2, wuguang_v2);
         sounds.put(RL_flash, flash);
+        sounds.put(RL_aoligei, aoligei);
     }
 }

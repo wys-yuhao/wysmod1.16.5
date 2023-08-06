@@ -1,0 +1,91 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "wys:item/jiaoji"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        77,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        14.75,
+        11.75
+      ],
+      "scale": [
+        2,
+        2,
+        1
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        77,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        14.75,
+        11.75
+      ],
+      "scale": [
+        -2,
+        2,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        13,
+        84,
+        0
+      ],
+      "translation": [
+        6.5,
+        8.75,
+        -5.25
+      ],
+      "scale": [
+        2,
+        2,
+        1
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        13,
+        84,
+        0
+      ],
+      "translation": [
+        6.5,
+        8.75,
+        -5.25
+      ],
+      "scale": [
+        -2,
+        2,
+        1
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        5.5,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        17,
+        0
+      ]
+    }
+  }
+}

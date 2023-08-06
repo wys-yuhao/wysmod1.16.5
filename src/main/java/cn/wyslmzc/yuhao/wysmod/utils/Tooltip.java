@@ -24,6 +24,11 @@ public class Tooltip {
             tooltip.add(new StringTextComponent(value));
         }
         tooltip.add(new StringTextComponent("§b§m§l=============================="));
+
+        if (!(info.size() > 0)) {
+            return;
+        }
+
         if (Screen.hasShiftDown()) {
             for (String s : info) {
                 tooltip.add(new StringTextComponent(s));

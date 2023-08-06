@@ -1,0 +1,91 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "wys:item/junpei"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        76,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        15.75,
+        11
+      ],
+      "scale": [
+        2,
+        2,
+        1
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        76,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        15.75,
+        11
+      ],
+      "scale": [
+        -2,
+        2,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        13,
+        77,
+        13
+      ],
+      "translation": [
+        0.75,
+        9.5,
+        -2
+      ],
+      "scale": [
+        2,
+        2,
+        1
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        13,
+        77,
+        13
+      ],
+      "translation": [
+        0.75,
+        9.5,
+        -2
+      ],
+      "scale": [
+        -2,
+        2,
+        1
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3.5,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        16.75,
+        0
+      ]
+    }
+  }
+}

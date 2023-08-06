@@ -9,6 +9,7 @@ import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.IntNBT;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeMod;
@@ -36,6 +37,7 @@ public class Stand extends Item {
 
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot, ItemStack stack) {
+        stack.addTagElement("HideFlags", IntNBT.valueOf(2));
         stack.addAttributeModifier(Attributes.MAX_HEALTH,
                 new AttributeModifier("health",
                         500,

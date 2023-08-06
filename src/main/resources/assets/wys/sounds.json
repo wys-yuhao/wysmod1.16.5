@@ -28,5 +28,11 @@
       "wys:flash"
     ],
     "subtitle": "闪现"
+  },
+  "aoligei": {
+    "sounds": [
+      "wys:aoligei"
+    ],
+    "subtitle": "奥力给"
   }
 }

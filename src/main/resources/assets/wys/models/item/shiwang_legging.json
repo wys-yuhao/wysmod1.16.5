@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "wys:item/shiwang_legs"
+    "layer0": "wys:item/armor/shiwang_legs"
   }
 }

@@ -7,6 +7,7 @@ import cn.wyslmzc.yuhao.wysmod.items.foods.SweetMadame;
 import cn.wyslmzc.yuhao.wysmod.items.props.*;
 import cn.wyslmzc.yuhao.wysmod.items.props.attributeItems.*;
 import cn.wyslmzc.yuhao.wysmod.items.props.runes.*;
+import cn.wyslmzc.yuhao.wysmod.items.props.transformer.*;
 import net.minecraft.item.Item;
 
 import java.util.Map;
@@ -127,6 +128,24 @@ public class ItemList {
     //手办集合
     public static final Item stand_all = new StandCollections(propProperties)
             .setRegistryName(location("stand_all"));
+    //奥力给
+    public static final Item shit = new Shit(propProperties)
+            .setRegistryName(location("shit"));
+    //奥特曼变身器-戴拿
+    public static final Item daina = new DaiNa(propProperties)
+            .setRegistryName(location("daina"));
+    //迪迦
+    public static final Item dijia = new DiJia(propProperties)
+            .setRegistryName(location("dijia"));
+    //盖亚
+    public static final Item gaiya = new GaiYa(propProperties)
+            .setRegistryName(location("gaiya"));
+    //黑暗迪迦
+    public static final Item xieedijia = new XieEDiJia(propProperties)
+            .setRegistryName(location("xieedijia"));
+    //赛罗
+    public static final Item sailuo = new SaiLuo(propProperties)
+            .setRegistryName(location("sailuo"));
     //测试
     public static final Item test = new test(new Item.Properties().stacksTo(1))
             .setRegistryName(location("test"));
@@ -166,6 +185,12 @@ public class ItemList {
         itemList.put("weisheng_v1", weisheng_v1);
         itemList.put("wuxiekeji", wuxiekeji);
         itemList.put("stand_all", stand_all);
+        itemList.put("shit", shit);
+        itemList.put("daina", daina);
+        itemList.put("dijia", dijia);
+        itemList.put("gaiya", gaiya);
+        itemList.put("xieedijia", xieedijia);
+        itemList.put("sailuo", sailuo);
         itemList.put("test", test);
     }
 }

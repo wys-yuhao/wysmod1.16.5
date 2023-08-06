@@ -67,7 +67,7 @@ public class ArmorSuit {
                 s = "chest";
                 break;
             case LEGS:
-                s = "legs";
+                s = "legging";
                 break;
             case FEET:
                 s = "feet";
@@ -111,11 +111,6 @@ public class ArmorSuit {
             for (String s : ArmorSuit.this.tooltip) {
                 tip.addTip("§a" + s);
             }
-
-            /*
-            for (String s : info) {
-                tip.addInfo("§e" + s);
-            }*/
 
             tip.show();
 

@@ -1,0 +1,81 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "wys:item/feiduandeliandao"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        76,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        7.75,
+        6.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        76,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        7.75,
+        6.25
+      ],
+      "scale": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        24,
+        86,
+        0
+      ],
+      "translation": [
+        2.25,
+        7,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        24,
+        86,
+        0
+      ],
+      "translation": [
+        2.25,
+        7,
+        0
+      ],
+      "scale": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        4,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        16,
+        0
+      ]
+    }
+  }
+}

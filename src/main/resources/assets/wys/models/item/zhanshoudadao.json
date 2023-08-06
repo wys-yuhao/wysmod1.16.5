@@ -1,0 +1,86 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "wys:item/zhanshoudadao"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        14.5,
+        9.5
+      ],
+      "scale": [
+        2,
+        2,
+        1
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        14.5,
+        9.5
+      ],
+      "scale": [
+        -2,
+        2,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        18,
+        84,
+        0
+      ],
+      "translation": [
+        2.25,
+        9,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        18,
+        84,
+        0
+      ],
+      "translation": [
+        2.25,
+        9,
+        0
+      ],
+      "scale": [
+        -1,
+        1,
+        1
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        5.25,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        17.75,
+        0
+      ]
+    }
+  }
+}

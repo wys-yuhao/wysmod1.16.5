@@ -11,6 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.IntNBT;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.text.ITextComponent;
@@ -39,6 +40,7 @@ public class RedEye extends Item {
 
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot, ItemStack stack) {
+        stack.addTagElement("HideFlags", IntNBT.valueOf(2));
         stack.addAttributeModifier(Attributes.ATTACK_DAMAGE,
                 new AttributeModifier("ATTACK_DAMAGE",
                         500,

@@ -29,7 +29,7 @@ public class RegistryEvents {
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         //初始化item列表
         ItemList.init();
-        SwordList.init();
+        WeaponList.init();
         ArmorList.init();
 
         //遍历注册

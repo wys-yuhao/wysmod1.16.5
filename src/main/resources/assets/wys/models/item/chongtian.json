@@ -1,0 +1,105 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "wys:item/chongtian"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        44,
+        -90,
+        0
+      ],
+      "translation": [
+        0,
+        14.5,
+        15.75
+      ],
+      "scale": [
+        2,
+        3,
+        1
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        44,
+        -90,
+        0
+      ],
+      "translation": [
+        0,
+        14.5,
+        15.75
+      ],
+      "scale": [
+        -2,
+        3,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -93,
+        16
+      ],
+      "translation": [
+        2,
+        13.25,
+        -2
+      ],
+      "scale": [
+        2,
+        3,
+        1
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -93,
+        16
+      ],
+      "translation": [
+        2,
+        13.25,
+        -2
+      ],
+      "scale": [
+        -2,
+        3,
+        1
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        4.5,
+        0
+      ]
+    },
+    "gui": {
+      "translation": [
+        0,
+        3.25,
+        0
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        15,
+        0
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        3.5,
+        0
+      ]
+    }
+  }
+}
