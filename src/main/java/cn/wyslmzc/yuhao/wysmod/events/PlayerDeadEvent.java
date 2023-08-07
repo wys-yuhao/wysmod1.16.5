@@ -24,6 +24,7 @@ public class PlayerDeadEvent {
             return;
         }
         player.setHealth(player.getMaxHealth() / 2);
+        player.removeEffect(EffectsList.respawn);
         event.setCanceled(true);
     }
 }
