@@ -34,7 +34,7 @@ public class WeaponEvent {
         if (stack.getItem() == WeaponList.feiduandeliandao) {
             //飞段镰刀吸血
             float blood = (float) (player.getHealth() + (damage * 0.4));
-            player.setHealth(player.getHealth() + blood);
+            player.setHealth(blood);
             PropUtils.actionBarTitle(player.level, player, "§6§l您成功吸了§c§l" + (int) blood + "§6§l点血");
         } else if (stack.getItem() == WeaponList.rilundao_woqishanyi) {
             //wqsy日轮刀召唤闪电

@@ -20,7 +20,7 @@ public class SweetMadame extends Item {
     public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> tooltip, ITooltipFlag p_77624_4_) {
         Tooltip tip = new Tooltip(tooltip);
 
-        tip.addTip("§a吃下获取生命恢复LV10一秒 ");
+        tip.addTip("§a吃下获取§d瞬间治疗§aLV10一秒 ");
         tip.addInfo("§e蜜酿后烤熟的禽肉");
         tip.addInfo("§e肉质如同流蜜一般香甜软糯");
         tip.addInfo("§e叫人想把每一根骨头都吮吸干净");

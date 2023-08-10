@@ -7,8 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class RiLunDao_ZuiPingYiZhiZu extends WeaponBase {
-    public RiLunDao_ZuiPingYiZhiZu(int damage, float speed, Properties properties) {
+public class RiLunDao_ZuiPingYiZhiZhu extends WeaponBase {
+    public RiLunDao_ZuiPingYiZhiZhu(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }
 

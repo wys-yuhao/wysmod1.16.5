@@ -18,7 +18,9 @@ public class RiLunDao_TanZhiLang extends WeaponBase {
 
     @Override
     public void onHandTick(ItemStack stack, World world, PlayerEntity player) {
-        stack.enchant(Enchantments.FIRE_ASPECT, 10);
+        if (!stack.isEnchanted()) {
+            stack.enchant(Enchantments.FIRE_ASPECT, 10);
+        }
 
         super.invTick(stack, world, player);
     }

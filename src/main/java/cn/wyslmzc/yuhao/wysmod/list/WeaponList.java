@@ -53,8 +53,8 @@ public class WeaponList {
             .setRegistryName(location("rilundao_tanzhilang"));
     public static Item rilundao_woqishanyi = new RiLunDao_WoQiShanYi(800, 3, weapon)
             .setRegistryName(location("rilundao_woqishanyi"));
-    public static Item rilundao_zuipingyizhizu = new RiLunDao_ZuiPingYiZhiZu(800, 1, weapon)
-            .setRegistryName(location("rilundao_zuipingyizhizu"));
+    public static Item rilundao_zuipingyizhizhu = new RiLunDao_ZuiPingYiZhiZhu(800, 1, weapon)
+            .setRegistryName(location("rilundao_zuipingyizhizhu"));
     public static Item jiaoji = new JiaoJi(800, 1, weapon)
             .setRegistryName(location("jiaoji"));
     public static Item jingangchui = new JingGangChui(800, 1, weapon)
@@ -90,7 +90,7 @@ public class WeaponList {
         itemList.put("feiduandeliandao", feiduandeliandao);
         itemList.put("rilundao_tanzhilang", rilundao_tanzhilang);
         itemList.put("rilundao_woqishanyi", rilundao_woqishanyi);
-        itemList.put("rilundao_zuipingyizhizu", rilundao_zuipingyizhizu);
+        itemList.put("rilundao_zuipingyizhizhu", rilundao_zuipingyizhizhu);
         itemList.put("jiaoji", jiaoji);
         itemList.put("jingangchui", jingangchui);
         itemList.put("junpei", junpei);

@@ -19,7 +19,9 @@ public class NaShenGa extends WeaponBase {
 
     @Override
     public void onHandTick(ItemStack stack, World world, PlayerEntity player) {
-        stack.enchant(Enchantments.KNOCKBACK, 10);
+        if (!stack.isEnchanted()) {
+            stack.enchant(Enchantments.KNOCKBACK, 10);
+        }
         super.onHandTick(stack, world, player);
     }
 }

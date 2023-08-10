@@ -8,14 +8,12 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
 public class JoinWorldEvent {
-    public static boolean isCreated;
+
 
     @SubscribeEvent
     public static void event(PlayerEvent.PlayerLoggedInEvent event) {
         World world = event.getEntity().level;
-        if (isCreated) {
-            return;
-        }
+
         if (world.isClientSide) {
             return;
         }
@@ -28,6 +26,6 @@ public class JoinWorldEvent {
         PropUtils.runCommand(world, "team modify blue color aqua");
         PropUtils.runCommand(world, "team modify red seeFriendlyInvisibles true");
         PropUtils.runCommand(world, "team modify blue seeFriendlyInvisibles true");
-        isCreated = true;
+        PropUtils.runCommand(world, "gamerule sendCommandFeedback false");
     }
 }

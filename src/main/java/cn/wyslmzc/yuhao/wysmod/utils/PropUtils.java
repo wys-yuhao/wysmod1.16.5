@@ -64,10 +64,10 @@ public class PropUtils {
             MinecraftServer server = Objects.requireNonNull(world.getServer());
             server.getCommands().performCommand(
                     world.getServer().createCommandSourceStack(),
-                    "title @a reset");
+                    "title " + player.getName().getContents() + " reset");
             server.getCommands().performCommand(
                     world.getServer().createCommandSourceStack(),
-                    "title @a actionbar [{\"text\":\"" + text + " \"}]");
+                    "title " + player.getName().getContents() + " actionbar [{\"text\":\"" + text + " \"}]");
         }
     }
 

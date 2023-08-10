@@ -40,7 +40,7 @@ public class Flash extends Item {
 
         PropUtils.runCommand(player, "playsound wys:flash voice @a ~ ~ ~");
         player.getCooldowns().addCooldown(this, 40);
-        EntityMoveUtils.PushToForward(player, 1.5F);
+        EntityMoveUtils.PushToForward(player, 2.0F);
 
         return ActionResult.pass(itemstack);
     }

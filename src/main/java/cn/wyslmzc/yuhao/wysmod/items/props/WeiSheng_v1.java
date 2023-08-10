@@ -40,8 +40,8 @@ public class WeiSheng_v1 extends Item {
         player.setItemInHand(hand, ItemStack.EMPTY);
 
         PropUtils.runCommand(player, "execute as @s[team=blue] at @s run execute as @a[team=red] at @s run effect give @s blindness 6 4");
-        PropUtils.runCommand(player, "execute as @s[team=red] at @s run execute as @a[team=blue] at @s run effect give @s wither 6 2");
-        PropUtils.runCommand(player, "execute as @s[team=blue] at @s run execute as @a[team=red] at @s run effect give @s blindness 6 4");
+        PropUtils.runCommand(player, "execute as @s[team=blue] at @s run execute as @a[team=red] at @s run effect give @s wither 6 2");
+        PropUtils.runCommand(player, "execute as @s[team=red] at @s run execute as @a[team=blue] at @s run effect give @s blindness 6 4");
         PropUtils.runCommand(player, "execute as @s[team=red] at @s run execute as @a[team=blue] at @s run effect give @s wither 6 2");
 
         PropUtils.title(playerWorld, player, "§c感受我的痛吧！！！！");

@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wys:stand_liushang"
+    },
+    {
+      "item": "wys:stand_xiaochao"
+    },
+    {
+      "item": "wys:stand_yuhao"
+    }
+  ],
+  "result": {
+    "item": "wys:stand_all",
+    "count": 1
+  }
+}
