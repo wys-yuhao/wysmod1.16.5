@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wys:xizhangri"
+    },
+    {
+      "item": "wys:xizhangyue"
+    }
+  ],
+  "result": {
+    "item": "wys:riyuexizhang",
+    "count": 1
+  }
+}
