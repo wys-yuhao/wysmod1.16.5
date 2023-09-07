@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class JunPei extends WeaponBase {
+public class JunPei extends NormalWeapon {
     public JunPei(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

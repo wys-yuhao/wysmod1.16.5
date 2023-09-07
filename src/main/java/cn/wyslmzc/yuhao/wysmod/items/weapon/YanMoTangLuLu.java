@@ -7,7 +7,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.ForgeMod;
 
-public class YanMoTangLuLu extends WeaponBase {
+public class YanMoTangLuLu extends NormalWeapon {
     public YanMoTangLuLu(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

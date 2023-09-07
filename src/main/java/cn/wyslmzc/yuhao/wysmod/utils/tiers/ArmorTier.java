@@ -1,4 +1,4 @@
-package cn.wyslmzc.yuhao.wysmod.utils;
+package cn.wyslmzc.yuhao.wysmod.utils.tiers;
 
 import cn.wyslmzc.yuhao.wysmod.WysMod;
 import net.minecraft.inventory.EquipmentSlotType;

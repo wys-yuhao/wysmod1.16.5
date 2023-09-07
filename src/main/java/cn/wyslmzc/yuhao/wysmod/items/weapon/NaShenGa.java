@@ -6,7 +6,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class NaShenGa extends WeaponBase {
+public class NaShenGa extends NormalWeapon {
     public NaShenGa(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

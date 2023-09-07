@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class JingGangChui extends WeaponBase {
+public class JingGangChui extends NormalWeapon {
     public JingGangChui(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

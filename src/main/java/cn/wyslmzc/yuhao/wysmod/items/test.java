@@ -1,12 +1,8 @@
-package cn.wyslmzc.yuhao.wysmod.items.props;
+package cn.wyslmzc.yuhao.wysmod.items;
 
-import cn.wyslmzc.yuhao.wysmod.list.ArmorList;
-import cn.wyslmzc.yuhao.wysmod.utils.ArmorSuit;
-import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -36,14 +32,6 @@ public class test extends Item {
 
     @Override
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-
-        ArmorSuit armor = ArmorList.dijia;
-
-        PropUtils.runCommand(player, "replaceitem entity @s armor.head wys:" + armor.getName(EquipmentSlotType.HEAD));
-        PropUtils.runCommand(player, "replaceitem entity @s armor.chest wys:" + armor.getName(EquipmentSlotType.CHEST));
-        PropUtils.runCommand(player, "replaceitem entity @s armor.legs wys:" + armor.getName(EquipmentSlotType.LEGS));
-        PropUtils.runCommand(player, "replaceitem entity @s armor.feet wys:" + armor.getName(EquipmentSlotType.FEET));
-
 
         return super.use(world, player, hand);
     }

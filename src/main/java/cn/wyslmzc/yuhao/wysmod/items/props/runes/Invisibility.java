@@ -19,7 +19,7 @@ public class Invisibility extends RuneBase {
         Tooltip tip = new Tooltip(tooltip);
 
         tip.addTip("§a给予自己§7隐身§aIII*1s");
-        tip.addInfo("§eA1高闪来一个好吗?");
+        tip.addInfo("§e你猜猜我在哪里O.o?");
 
         tip.show();
 

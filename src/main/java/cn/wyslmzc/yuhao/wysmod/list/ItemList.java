@@ -8,6 +8,7 @@ import cn.wyslmzc.yuhao.wysmod.items.props.*;
 import cn.wyslmzc.yuhao.wysmod.items.props.attributeItems.*;
 import cn.wyslmzc.yuhao.wysmod.items.props.runes.*;
 import cn.wyslmzc.yuhao.wysmod.items.props.transformer.*;
+import cn.wyslmzc.yuhao.wysmod.items.test;
 import net.minecraft.item.Item;
 
 import java.util.Map;

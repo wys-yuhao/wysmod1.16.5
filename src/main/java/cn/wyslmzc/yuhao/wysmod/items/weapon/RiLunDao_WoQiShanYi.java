@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class RiLunDao_WoQiShanYi extends WeaponBase {
+public class RiLunDao_WoQiShanYi extends NormalWeapon {
     public RiLunDao_WoQiShanYi(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

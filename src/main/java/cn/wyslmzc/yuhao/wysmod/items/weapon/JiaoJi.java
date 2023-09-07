@@ -2,7 +2,7 @@ package cn.wyslmzc.yuhao.wysmod.items.weapon;
 
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 
-public class JiaoJi extends WeaponBase {
+public class JiaoJi extends NormalWeapon {
     public JiaoJi(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

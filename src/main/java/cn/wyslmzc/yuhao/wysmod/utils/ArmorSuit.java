@@ -1,6 +1,7 @@
 package cn.wyslmzc.yuhao.wysmod.utils;
 
 import cn.wyslmzc.yuhao.wysmod.list.TabList;
+import cn.wyslmzc.yuhao.wysmod.utils.tiers.ArmorTier;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.client.util.ITooltipFlag;

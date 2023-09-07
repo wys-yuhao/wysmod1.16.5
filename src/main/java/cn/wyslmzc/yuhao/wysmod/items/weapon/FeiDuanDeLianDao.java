@@ -2,7 +2,7 @@ package cn.wyslmzc.yuhao.wysmod.items.weapon;
 
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 
-public class FeiDuanDeLianDao extends WeaponBase {
+public class FeiDuanDeLianDao extends NormalWeapon {
     public FeiDuanDeLianDao(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

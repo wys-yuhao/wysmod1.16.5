@@ -6,7 +6,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class RiLunDao_TanZhiLang extends WeaponBase {
+public class RiLunDao_TanZhiLang extends NormalWeapon {
     public RiLunDao_TanZhiLang(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

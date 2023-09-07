@@ -1,4 +1,4 @@
-package cn.wyslmzc.yuhao.wysmod.utils;
+package cn.wyslmzc.yuhao.wysmod.utils.tiers;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;

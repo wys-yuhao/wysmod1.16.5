@@ -8,7 +8,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class KuWu extends WeaponBase {
+public class KuWu extends NormalWeapon {
     public KuWu(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

@@ -1,7 +1,7 @@
 package cn.wyslmzc.yuhao.wysmod.items.weapon;
 
-import cn.wyslmzc.yuhao.wysmod.utils.ToolsTier;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
+import cn.wyslmzc.yuhao.wysmod.utils.tiers.ToolsTier;
 import com.google.common.collect.Multimap;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
@@ -20,11 +20,11 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class WeaponBase extends SwordItem {
+public class NormalWeapon extends SwordItem {
     private int damage;
     private float speed;
 
-    public WeaponBase(int damage, float speed, Properties properties) {
+    public NormalWeapon(int damage, float speed, Properties properties) {
         super(ToolsTier.Inf, damage - 1, speed - 4, properties);
         this.damage = damage;
         this.speed = speed;

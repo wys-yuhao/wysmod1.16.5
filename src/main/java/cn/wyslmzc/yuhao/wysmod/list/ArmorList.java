@@ -41,7 +41,7 @@ public class ArmorList {
 
 
     public static void init() {
-        crystal = addArmor("crystal", 800, 0, 0, "材质来自1.8.9幸运方块扩展");
+        crystal = addArmor("crystal", 800, 0, 0, "全装由水晶打造,存粹凑数的qvq");
         mingren4 = addArmor("mingren4", 1200, 0, 0, "抗性提升1", "生命恢复4");
         bofengshuimen = addArmor("bofengshuimen", 1300, 0, 0, "速度3", "抗性提升2");
         dihu = addArmor("dihu", 1360, 0, 0, "缓慢1", "跳跃提升1", "抗性提升2");
