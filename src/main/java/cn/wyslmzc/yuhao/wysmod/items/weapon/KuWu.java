@@ -1,6 +1,7 @@
 package cn.wyslmzc.yuhao.wysmod.items.weapon;
 
 import cn.wyslmzc.yuhao.wysmod.VarInstance;
+import cn.wyslmzc.yuhao.wysmod.items.bases.weaponBase;
 import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 import net.minecraft.entity.player.PlayerEntity;
@@ -8,7 +9,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class KuWu extends NormalWeapon {
+public class KuWu extends weaponBase {
     public KuWu(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

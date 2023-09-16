@@ -1,4 +1,4 @@
-package cn.wyslmzc.yuhao.wysmod.items.weapon;
+package cn.wyslmzc.yuhao.wysmod.items.bases;
 
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 import cn.wyslmzc.yuhao.wysmod.utils.tiers.ToolsTier;
@@ -20,11 +20,11 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class NormalWeapon extends SwordItem {
+public class weaponBase extends SwordItem {
     private int damage;
     private float speed;
 
-    public NormalWeapon(int damage, float speed, Properties properties) {
+    public weaponBase(int damage, float speed, Properties properties) {
         super(ToolsTier.Inf, damage - 1, speed - 4, properties);
         this.damage = damage;
         this.speed = speed;

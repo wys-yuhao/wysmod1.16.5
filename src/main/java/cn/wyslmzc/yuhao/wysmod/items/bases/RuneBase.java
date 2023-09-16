@@ -1,4 +1,4 @@
-package cn.wyslmzc.yuhao.wysmod.items.props.runes;
+package cn.wyslmzc.yuhao.wysmod.items.bases;
 
 import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
 import net.minecraft.entity.Entity;

@@ -1,5 +1,6 @@
 package cn.wyslmzc.yuhao.wysmod.items.weapon;
 
+import cn.wyslmzc.yuhao.wysmod.items.bases.weaponBase;
 import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 import net.minecraft.entity.player.PlayerEntity;
@@ -7,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
 
-public class RiLunDao_WoQiShanYi extends NormalWeapon {
+public class RiLunDao_WoQiShanYi extends weaponBase {
     public RiLunDao_WoQiShanYi(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

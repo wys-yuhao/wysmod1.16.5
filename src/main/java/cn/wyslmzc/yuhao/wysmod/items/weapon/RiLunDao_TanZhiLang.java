@@ -1,12 +1,13 @@
 package cn.wyslmzc.yuhao.wysmod.items.weapon;
 
+import cn.wyslmzc.yuhao.wysmod.items.bases.weaponBase;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class RiLunDao_TanZhiLang extends NormalWeapon {
+public class RiLunDao_TanZhiLang extends weaponBase {
     public RiLunDao_TanZhiLang(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

@@ -1,5 +1,6 @@
 package cn.wyslmzc.yuhao.wysmod.items.props.runes;
 
+import cn.wyslmzc.yuhao.wysmod.items.bases.RuneBase;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;

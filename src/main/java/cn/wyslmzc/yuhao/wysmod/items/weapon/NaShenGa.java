@@ -1,12 +1,13 @@
 package cn.wyslmzc.yuhao.wysmod.items.weapon;
 
+import cn.wyslmzc.yuhao.wysmod.items.bases.weaponBase;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class NaShenGa extends NormalWeapon {
+public class NaShenGa extends weaponBase {
     public NaShenGa(int damage, float speed, Properties properties) {
         super(damage, speed, properties);
     }

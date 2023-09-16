@@ -1,22 +1,16 @@
 package cn.wyslmzc.yuhao.wysmod.items.props.transformer;
 
+import cn.wyslmzc.yuhao.wysmod.items.bases.ItemBase;
 import cn.wyslmzc.yuhao.wysmod.list.ArmorList;
 import cn.wyslmzc.yuhao.wysmod.utils.ArmorSuit;
 import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
 
-import javax.annotation.Nullable;
-import java.util.List;
-
-public class GaiYa extends Item {
+public class GaiYa extends ItemBase {
     private final ArmorSuit armor = ArmorList.gaiya;
 
     public GaiYa(Properties properties) {
@@ -24,23 +18,13 @@ public class GaiYa extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> tooltip, ITooltipFlag p_77624_4_) {
-        Tooltip tip = new Tooltip(tooltip);
-
+    public void setTip(Tooltip tip) {
         tip.addTip("§a变身为盖亚奥特曼");
         tip.addTip("§c注意会替换装备栏!");
-        tip.addInfo("§e");
-
-        tip.show();
-
-        super.appendHoverText(p_77624_1_, p_77624_2_, tip.getTooltip(), p_77624_4_);
     }
 
     @Override
-    public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-        ItemStack itemstack = player.getItemInHand(hand);
-        World playerWorld = player.level;
-
+    public void useTick(PlayerEntity player, World playerWorld, ItemStack itemstack, Hand hand) {
         player.setItemInHand(hand, ItemStack.EMPTY);
 
         PropUtils.runCommand(player, "replaceitem entity @s armor.head wys:gaiya_helmet");
@@ -52,7 +36,5 @@ public class GaiYa extends Item {
 
 
         PropUtils.title(playerWorld, player, "§a§l盖亚奥特曼");
-
-        return ActionResult.pass(itemstack);
     }
 }

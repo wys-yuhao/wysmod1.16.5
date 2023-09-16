@@ -1,6 +1,7 @@
 package cn.wyslmzc.yuhao.wysmod.list;
 
 import cn.wyslmzc.yuhao.wysmod.events.RegistryEvents;
+import cn.wyslmzc.yuhao.wysmod.items.bases.weaponBase;
 import cn.wyslmzc.yuhao.wysmod.items.weapon.*;
 import net.minecraft.item.Item;
 
@@ -12,40 +13,40 @@ public class WeaponList {
     public static Map<String, Item> itemList = RegistryEvents.itemList;
     public static Item.Properties weapon = new Item.Properties().tab(TabList.weaponGroup).stacksTo(1);
 
-    public static Item chongtian = new NormalWeapon(650, 1, weapon)
+    public static Item chongtian = new weaponBase(650, 1, weapon)
             .setRegistryName(location("chongtian"));
-    public static Item dihuzhua = new NormalWeapon(500, 1, weapon)
+    public static Item dihuzhua = new weaponBase(500, 1, weapon)
             .setRegistryName(location("dihuzhua"));
-    public static Item jiguangjian = new NormalWeapon(5000, 1.5f, weapon)
+    public static Item jiguangjian = new weaponBase(5000, 1.5f, weapon)
             .setRegistryName(location("jiguangjian"));
-    public static Item jiyingdao = new NormalWeapon(650, 1, weapon)
+    public static Item jiyingdao = new weaponBase(650, 1, weapon)
             .setRegistryName(location("jiyingdao"));
-    public static Item fengyingnu = new NormalWeapon(700, 1, weapon)
+    public static Item fengyingnu = new weaponBase(700, 1, weapon)
             .setRegistryName(location("fengyingnu"));
-    public static Item modaoqianren = new NormalWeapon(2000, 1, weapon)
+    public static Item modaoqianren = new weaponBase(2000, 1, weapon)
             .setRegistryName(location("modaoqianren"));
-    public static Item potie = new NormalWeapon(500, 1, weapon)
+    public static Item potie = new weaponBase(500, 1, weapon)
             .setRegistryName(location("potie"));
-    public static Item riyuexizhang = new NormalWeapon(1200, 1, weapon)
+    public static Item riyuexizhang = new weaponBase(1200, 1, weapon)
             .setRegistryName(location("riyuexizhang"));
-    public static Item xingkongfu = new NormalWeapon(600, 1, weapon)
+    public static Item xingkongfu = new weaponBase(600, 1, weapon)
             .setRegistryName(location("xingkongfu"));
     //TODO: 泰拉刃right click
-    public static Item tailazhiren = new NormalWeapon(500, 1, weapon)
+    public static Item tailazhiren = new weaponBase(500, 1, weapon)
             .setRegistryName(location("tailazhiren"));
-    public static Item xingtianliejian = new NormalWeapon(750, 1, weapon)
+    public static Item xingtianliejian = new weaponBase(750, 1, weapon)
             .setRegistryName(location("xingtianliejian"));
-    public static Item xiuluowandao = new NormalWeapon(821, 1, weapon)
+    public static Item xiuluowandao = new weaponBase(821, 1, weapon)
             .setRegistryName(location("xiuluowandao"));
-    public static Item xizhangri = new NormalWeapon(888, 1, weapon)
+    public static Item xizhangri = new weaponBase(888, 1, weapon)
             .setRegistryName(location("xizhangri"));
-    public static Item xizhangyue = new NormalWeapon(888, 1, weapon)
+    public static Item xizhangyue = new weaponBase(888, 1, weapon)
             .setRegistryName(location("xizhangyue"));
-    public static Item lieyandao = new NormalWeapon(777, 1, weapon)
+    public static Item lieyandao = new weaponBase(777, 1, weapon)
             .setRegistryName(location("lieyandao"));
-    public static Item zhanshoudadao = new NormalWeapon(450, 1, weapon)
+    public static Item zhanshoudadao = new weaponBase(450, 1, weapon)
             .setRegistryName(location("zhanshoudadao"));
-    public static Item gaozhendonglizidao = new NormalWeapon(500, 1, weapon)
+    public static Item gaozhendonglizidao = new weaponBase(500, 1, weapon)
             .setRegistryName(location("gaozhendonglizidao"));
     public static Item feiduandeliandao = new FeiDuanDeLianDao(400, 1, weapon)
             .setRegistryName(location("feiduandeliandao"));
