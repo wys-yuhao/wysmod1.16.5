@@ -34,5 +34,11 @@
       "wys:aoligei"
     ],
     "subtitle": "奥力给"
+  },
+  "genshin_impack": {
+    "sounds": [
+      "wys:genshin_impack"
+    ],
+    "subtitle": "原神启动"
   }
 }

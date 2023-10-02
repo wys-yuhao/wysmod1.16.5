@@ -32,7 +32,6 @@ public class test extends Item {
 
     @Override
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-
         return super.use(world, player, hand);
     }
 }

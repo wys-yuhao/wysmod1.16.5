@@ -147,6 +147,9 @@ public class ItemList {
     //赛罗
     public static final Item sailuo = new SaiLuo(propProperties)
             .setRegistryName(location("sailuo"));
+    //原神启动
+    public static final Item genshin_impack = new GenshinImpack(propProperties)
+            .setRegistryName(location("genshin_impack"));
     //测试
     public static final Item test = new test(new Item.Properties().stacksTo(1))
             .setRegistryName(location("test"));
@@ -192,6 +195,7 @@ public class ItemList {
         itemList.put("gaiya", gaiya);
         itemList.put("xieedijia", xieedijia);
         itemList.put("sailuo", sailuo);
+        itemList.put("genshin_impack", genshin_impack);
         itemList.put("test", test);
     }
 }
