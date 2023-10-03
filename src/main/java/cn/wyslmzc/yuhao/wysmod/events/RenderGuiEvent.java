@@ -1,7 +1,10 @@
 package cn.wyslmzc.yuhao.wysmod.events;
 
+import cn.wyslmzc.yuhao.wysmod.VarInstance;
 import cn.wyslmzc.yuhao.wysmod.WysMod;
+import cn.wyslmzc.yuhao.wysmod.list.ArmorList;
 import cn.wyslmzc.yuhao.wysmod.list.EffectsList;
+import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.AbstractGui;
 import net.minecraft.entity.player.PlayerEntity;
@@ -38,8 +41,40 @@ public class RenderGuiEvent {
             }
             World world = player.level;
 
+            isScale(event);
+
             genshinImpack(event, player, posX, posY);
+            ironman(event, player, posX, posY);
         }
+    }
+
+    private static void isScale(RenderGameOverlayEvent event) {
+        int scale = Minecraft.getInstance().options.guiScale;
+        if (scale != 1) {
+            Minecraft.getInstance().options.guiScale = 1;
+            Minecraft.getInstance().options.save();
+        }
+    }
+
+    private static void ironman(RenderGameOverlayEvent event, PlayerEntity player, int posX, int posY) {
+        if (!PropUtils.isPlayerEquipArmor(player, ArmorList.ironman)) {
+            return;
+        }
+
+        int count;
+        try {
+            count = VarInstance.INSTANCE.ironmanHurtCount.get(player);
+        } catch (Exception e) {
+            count = 0;
+            VarInstance.INSTANCE.ironmanHurtCount.put(player, count);
+        }
+
+
+        Minecraft.getInstance().font.draw(event.getMatrixStack(),
+                "§6[钢铁侠套装]§d剩余耐久: " + (8 - count) + "/8",
+                (int) (posX / 2),
+                (int) (posY / 2),
+                -12829636);
     }
 
     private static void genshinImpack(RenderGameOverlayEvent event, PlayerEntity player, int posX, int posY) {

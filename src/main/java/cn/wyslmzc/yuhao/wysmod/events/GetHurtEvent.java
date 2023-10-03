@@ -28,16 +28,17 @@ public class GetHurtEvent {
 
     private static void ironman(LivingDamageEvent event, PlayerEntity player) {
         if (PropUtils.isPlayerEquipArmor(player, ArmorList.ironman)) {
-            int count = 1;
+            int count;
             try {
                 count = VarInstance.INSTANCE.ironmanHurtCount.get(player);
             } catch (Exception e) {
-                VarInstance.INSTANCE.ironmanHurtCount.put(player, count + 1);
+                count = 0;
+                VarInstance.INSTANCE.ironmanHurtCount.put(player, 0);
             }
 
             if (count < 8) {
                 VarInstance.INSTANCE.ironmanHurtCount.put(player, count + 1);
-                PropUtils.actionBarTitle(player.level, player, "§6[钢铁侠套装]§d剩余耐久: " + (8 - count) + "/8");
+                //PropUtils.actionBarTitle(player.level, player, "§6[钢铁侠套装]§d剩余耐久: " + (8 - count) + "/8");
             } else {
                 VarInstance.INSTANCE.ironmanHurtCount.put(player, 0);
                 PropUtils.actionBarTitle(player.level, player, "§6[钢铁侠套装]§c§l已损坏!");
