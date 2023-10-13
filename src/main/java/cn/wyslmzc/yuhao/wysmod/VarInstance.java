@@ -16,6 +16,10 @@ public class VarInstance {
     public Map<PlayerEntity, Integer> ironmanHurtCount = new HashMap<>();
 
     public VarInstance() {
-        INSTANCE = this;
+        if (INSTANCE != null) {
+            throw new RuntimeException("VarInstance has been initialized");
+        } else {
+            INSTANCE = this;
+        }
     }
 }

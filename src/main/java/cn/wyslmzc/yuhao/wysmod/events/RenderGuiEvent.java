@@ -9,7 +9,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.AbstractGui;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
@@ -32,31 +31,20 @@ public class RenderGuiEvent {
     public static void renderGuiEvent(RenderGameOverlayEvent event) {
 
         if (!event.isCancelable() && event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
-            int posX = (event.getWindow().getWidth()) / 2;
-            int posY = (event.getWindow().getHeight()) / 2;
-
             PlayerEntity player = Minecraft.getInstance().player;
             if (player == null) {
                 throw new RuntimeException("Player is null");
             }
-            World world = player.level;
 
-            isScale(event);
-
-            genshinImpack(event, player, posX, posY);
-            ironman(event, player, posX, posY);
+            genshinImpack(event, player);
+            ironman(event, player);
         }
     }
 
-    private static void isScale(RenderGameOverlayEvent event) {
-        int scale = Minecraft.getInstance().options.guiScale;
-        if (scale != 1) {
-            Minecraft.getInstance().options.guiScale = 1;
-            Minecraft.getInstance().options.save();
-        }
-    }
+    private static void ironman(RenderGameOverlayEvent event, PlayerEntity player) {
+        int posX = event.getWindow().getWidth() / 2;
+        int posY = event.getWindow().getHeight() / 2;
 
-    private static void ironman(RenderGameOverlayEvent event, PlayerEntity player, int posX, int posY) {
         if (!PropUtils.isPlayerEquipArmor(player, ArmorList.ironman)) {
             return;
         }
@@ -77,7 +65,12 @@ public class RenderGuiEvent {
                 -12829636);
     }
 
-    private static void genshinImpack(RenderGameOverlayEvent event, PlayerEntity player, int posX, int posY) {
+    private static void genshinImpack(RenderGameOverlayEvent event, PlayerEntity player) {
+        int posX = event.getWindow().getWidth() / 2;
+        int posY = event.getWindow().getHeight() / 2;
+        int sposX = event.getWindow().getGuiScaledWidth();
+        int sposY = event.getWindow().getGuiScaledHeight();
+
         if (player.hasEffect(EffectsList.genshin_impack)) {
             genshin_impack_alpha++;
             //渐变
@@ -97,7 +90,7 @@ public class RenderGuiEvent {
                     0, 0,
                     0, 0,
                     posX, posY,
-                    posX, posY);
+                    sposX, sposY);
         } else {
             genshin_impack_alpha = 0;
         }
