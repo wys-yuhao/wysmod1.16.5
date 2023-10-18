@@ -1,6 +1,6 @@
 package cn.wyslmzc.yuhao.wysmod.events;
 
-import cn.wyslmzc.yuhao.wysmod.utils.PropUtils;
+import cn.wyslmzc.yuhao.wysmod.utils.Umpire;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -21,7 +21,7 @@ public class PlayerUpdateEvent {
     private static void healfix(PlayerEntity player) {
         if (player.getHealth() > player.getMaxHealth()) {
             player.setHealth(player.getMaxHealth());
-            PropUtils.tellRaw(player.level, "§a玩家: " + player.getName().getContents() + " 的生命值异常，已修复!");
+            Umpire.send(player.level, player, "生命值异常，已修复!");
         }
     }
 }

@@ -25,7 +25,7 @@ public class Tooltip {
         }
         tooltip.add(new StringTextComponent("§b§m§l=============================="));
 
-        if (!(info.size() > 0)) {
+        if (info.isEmpty()) {
             return;
         }
 

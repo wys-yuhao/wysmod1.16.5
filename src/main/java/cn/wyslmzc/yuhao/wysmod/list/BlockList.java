@@ -9,7 +9,6 @@ public class BlockList {
     private static final Map<String, Block> blockList = RegistryEvents.blockMap;
 
     /*
-    //Make a luckyblock
     public static Block luckyblock = new Block(
             Block.Properties.of(Material.STONE)
             .strength(2, 38000)

@@ -1,6 +1,7 @@
 package cn.wyslmzc.yuhao.wysmod.items.bases;
 
 import cn.wyslmzc.yuhao.wysmod.utils.Tooltip;
+import cn.wyslmzc.yuhao.wysmod.utils.Umpire;
 import com.google.common.collect.Multimap;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
@@ -14,14 +15,11 @@ import net.minecraft.nbt.IntNBT;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
 
 public class ItemBase extends Item {
     public ItemBase(Properties p_i48487_1_) {
@@ -62,27 +60,20 @@ public class ItemBase extends Item {
     @Override
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        World playerWorld = player.level;
-
-        //裁判系统发送文本
-        for (PlayerEntity playerEntity : world.players()) {
-            if (Objects.requireNonNull(playerEntity.getTeam()).getName().equals("umpire")) {
-                playerEntity.sendMessage(new StringTextComponent(
-                        "§l[§6裁判系统§r§l]" +
-                                "§r§l[§7" +
-                                System.currentTimeMillis() +
-                                "§r§l][" +
-                                "§r§a玩家: " +
-                                Objects.requireNonNull(player.getTeam()).getColor().toString() +
-                                player.getName().getContents() +
-                                "§r§l][§d使用道具" +
-                                "§r§l]" +
-                                "§r§a[§b" +
-                                new TranslationTextComponent("item.wys." + itemstack.getItem().getRegistryName().getPath()).getString() +
-                                "§r§a]"), UUID.randomUUID());
-            }
+        if (!world.isClientSide()) {
+            return ActionResult.pass(itemstack);
         }
 
+
+
+        World playerWorld = player.level;
+
+
+        //裁判系统发送文本
+        Umpire.send(playerWorld, player, "§d使用道具:§r§l" +
+                "§a「§b" +
+                new TranslationTextComponent("item.wys." + itemstack.getItem().getRegistryName().getPath()).getString() +
+                "§r§a」");
 
         useTick(player, playerWorld, itemstack, hand);
 

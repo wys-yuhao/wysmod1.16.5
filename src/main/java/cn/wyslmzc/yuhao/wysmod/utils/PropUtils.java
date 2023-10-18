@@ -2,7 +2,6 @@ package cn.wyslmzc.yuhao.wysmod.utils;
 
 
 import net.minecraft.command.CommandSource;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effect;
@@ -64,9 +63,6 @@ public class PropUtils {
             MinecraftServer server = Objects.requireNonNull(world.getServer());
             server.getCommands().performCommand(
                     world.getServer().createCommandSourceStack(),
-                    "title " + player.getName().getContents() + " reset");
-            server.getCommands().performCommand(
-                    world.getServer().createCommandSourceStack(),
                     "title " + player.getName().getContents() + " actionbar [{\"text\":\"" + text + " \"}]");
         }
     }
@@ -93,7 +89,7 @@ public class PropUtils {
                     "Server",
                     new StringTextComponent("Server"),
                     server,
-                    (Entity) null);
+                    null);
 
             server.getCommands().performCommand(
                     source,

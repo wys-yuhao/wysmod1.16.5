@@ -60,8 +60,8 @@ public class RenderGuiEvent {
 
         Minecraft.getInstance().font.draw(event.getMatrixStack(),
                 "§6[钢铁侠套装]§d剩余耐久: " + (8 - count) + "/8",
-                (int) (posX / 2),
-                (int) (posY / 2),
+                posX / 2,
+                posY / 2,
                 -12829636);
     }
 

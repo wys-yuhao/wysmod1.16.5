@@ -14,10 +14,6 @@ public class BaseEffect extends Effect {
         this.instant = isInstant;
     }
 
-    public boolean isInstantenous() {
-        return false;
-    }
-
     @Override
     public boolean isDurationEffectTick(int remainingTicks, int level) {
         if (isInstantenous()) {

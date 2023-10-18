@@ -21,7 +21,7 @@ public enum ToolsTier implements IItemTier {
     private final int enchantmentValue;
     private final LazyValue<Ingredient> repairIngredient;
 
-    private ToolsTier(int level, int uses, float speed, float damage, int enchantment, Supplier repairIngredient) {
+    ToolsTier(int level, int uses, float speed, float damage, int enchantment, Supplier repairIngredient) {
         this.level = level;
         this.uses = uses;
         this.speed = speed;
@@ -51,6 +51,6 @@ public enum ToolsTier implements IItemTier {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient) this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }
