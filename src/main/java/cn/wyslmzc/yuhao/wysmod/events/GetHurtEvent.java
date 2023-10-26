@@ -31,22 +31,30 @@ public class GetHurtEvent {
     }
 
     private static void umpire(LivingDamageEvent event, PlayerEntity player) {
-        if (!(event.getSource().getEntity() instanceof PlayerEntity)) {
+        if (event.getSource().getEntity() instanceof PlayerEntity) {
             return;
         }
 
         TextFormatting color;
-
-        if (event.getSource().getEntity().getTeam() == null) {
+        try {
+            color = event.getSource().getEntity().getTeam().getColor();
+        } catch (NullPointerException e) {
             color = TextFormatting.WHITE;
         }
-        color = event.getSource().getEntity().getTeam().getColor();
+
+        String source;
+        try {
+            source = event.getSource().toString();
+        } catch (NullPointerException e) {
+            source = "§c未知§r";
+        }
+
 
         Umpire.send(player.level, player,
                 "§d受到伤害:§r§l " +
                         event.getAmount() + " §d来自于 " +
-                        color +
-                        event.getSource().getEntity().getName().getContents()
+                        color + source
+
         );
     }
 
@@ -89,6 +97,7 @@ public class GetHurtEvent {
         if (i <= level) {
             event.setCanceled(true);
             PropUtils.actionBarTitle(player.level, player, "§6§l您闪避了一次攻击!");
+            Umpire.send(player.level, player, "§6§l闪避了一次攻击");
         }
     }
 
