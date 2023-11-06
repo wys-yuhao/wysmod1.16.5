@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import java.util.Map;
 
 public class BlockList {
-    private static final Map<String, Block> blockList = RegistryEvents.blockMap;
+    private static final Map<String, Block> blockList = RegistryEvents.blockList;
 
     /*
     public static Block luckyblock = new Block(

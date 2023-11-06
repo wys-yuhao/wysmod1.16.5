@@ -1,6 +1,7 @@
 package cn.wyslmzc.yuhao.wysmod.events;
 
 import cn.wyslmzc.yuhao.wysmod.WysMod;
+import cn.wyslmzc.yuhao.wysmod.gui.GUIBase;
 import cn.wyslmzc.yuhao.wysmod.list.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -21,8 +22,9 @@ import java.util.Map;
 public class RegistryEvents {
     public static final Logger logger = WysMod.LOGGER;
     public static Map<String, Item> itemList = new HashMap<>();
-    public static Map<String, Block> blockMap = new HashMap<>();
-    public static Map<String, Effect> effectMap = new HashMap<>();
+    public static Map<String, Block> blockList = new HashMap<>();
+    public static Map<String, Effect> effectList = new HashMap<>();
+    public static Map<String, GUIBase> GUIList = new HashMap<>();
     public static Map<ResourceLocation, SoundEvent> sounds = new HashMap<>();
 
     @SubscribeEvent
@@ -31,6 +33,7 @@ public class RegistryEvents {
         ItemList.init();
         WeaponList.init();
         ArmorList.init();
+        cn.wyslmzc.yuhao.wysmod.list.GUIList.init();
 
         //遍历注册
         for (String name : itemList.keySet()) {
@@ -45,9 +48,9 @@ public class RegistryEvents {
         BlockList.init();
 
         //遍历注册
-        for (String name : blockMap.keySet()) {
+        for (String name : blockList.keySet()) {
             logger.log(Level.INFO, "[WYS]Registering block:" + name);
-            event.getRegistry().register(blockMap.get(name));
+            event.getRegistry().register(blockList.get(name));
         }
     }
 
@@ -57,9 +60,9 @@ public class RegistryEvents {
         EffectsList.init();
 
         //遍历注册
-        for (String name : effectMap.keySet()) {
+        for (String name : effectList.keySet()) {
             logger.log(Level.INFO, "[WYS]Registering effect:" + name);
-            event.getRegistry().register(effectMap.get(name));
+            event.getRegistry().register(effectList.get(name));
         }
     }
 

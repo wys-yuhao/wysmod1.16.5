@@ -15,7 +15,7 @@ public class EffectsList {
     public static final Effect upsetinv = new UpsetInv(EffectType.HARMFUL, 0xFF5555, false).setRegistryName("upsetting");
     public static final Effect invulnerable = new Invulnerable(EffectType.BENEFICIAL, 0xA52A2A, false).setRegistryName("invulnerable");
     public static final Effect genshin_impack = new BaseEffect(EffectType.BENEFICIAL, 0xA52A2A, false).setRegistryName("genshin_impack");
-    public static Map<String, Effect> effectMap = RegistryEvents.effectMap;
+    public static Map<String, Effect> effectMap = RegistryEvents.effectList;
 
     public static void init() {
         effectMap.put("flight", flight);
