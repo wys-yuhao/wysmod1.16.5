@@ -23,9 +23,6 @@ public class BaseEffect extends Effect {
     }
 
     protected boolean canApplyEffect(int remainingTicks, int level) {
-        if (!isInstantenous()) {
-            Thread.dumpStack();
-        }
         return false;
     }
 

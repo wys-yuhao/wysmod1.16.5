@@ -15,7 +15,6 @@ public class PlayerRespawnEvent {
 
     private static void ironman(PlayerEvent.PlayerRespawnEvent event) {
         PlayerEntity player = event.getPlayer();
-        int count = VarInstance.INSTANCE.ironmanHurtCount.get(player);
-        VarInstance.INSTANCE.ironmanHurtCount.put(player, 0);
+        VarInstance.INSTANCE.ironmanHurtCount.putIfAbsent(player, 0);
     }
 }

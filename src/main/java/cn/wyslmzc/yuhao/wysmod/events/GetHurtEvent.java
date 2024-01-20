@@ -26,6 +26,8 @@ public class GetHurtEvent {
         invulnerable(event, player);
         //钢铁侠套装
         ironman(event, player);
+        //虚妄之诺伤害叠加
+        xuwangzhinuo(event, player);
         //裁判系统输出伤害
         umpire(event, player);
     }
@@ -101,4 +103,21 @@ public class GetHurtEvent {
         }
     }
 
+    private static void xuwangzhinuo(LivingDamageEvent event, PlayerEntity player) {
+        if (player.getEffect(EffectsList.xuwangzhinuo) == null) {
+            return;
+        }
+        //上面判断了notnull
+        event.setCanceled(true);
+
+        double damage = event.getAmount();
+        if (VarInstance.INSTANCE.xuwangzhinuo.get(player) != null) {
+            Umpire.send(player.level, player, "§5§l虚妄之诺伤害叠加:" +
+                    VarInstance.INSTANCE.xuwangzhinuo.get(player) +
+                    " + " +
+                    damage);
+        }
+
+        VarInstance.INSTANCE.xuwangzhinuo.merge(player, damage, Double::sum);
+    }
 }

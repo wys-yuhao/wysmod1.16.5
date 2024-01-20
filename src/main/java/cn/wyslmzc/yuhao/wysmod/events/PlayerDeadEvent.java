@@ -1,6 +1,7 @@
 package cn.wyslmzc.yuhao.wysmod.events;
 
 import cn.wyslmzc.yuhao.wysmod.list.EffectsList;
+import cn.wyslmzc.yuhao.wysmod.utils.Umpire;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +26,7 @@ public class PlayerDeadEvent {
         }
         player.setHealth(player.getMaxHealth() / 2);
         player.removeEffect(EffectsList.respawn);
+        Umpire.send(player.level, player, "重生BUFF生效");
         event.setCanceled(true);
     }
 }

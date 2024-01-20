@@ -150,6 +150,9 @@ public class ItemList {
     //原神启动
     public static final Item genshin_impack = new GenshinImpack(propProperties)
             .setRegistryName(location("genshin_impack"));
+    //虚妄之诺
+    public static final Item xuwangzhinuo = new XuWangZhiNuo(propProperties)
+            .setRegistryName(location("xuwangzhinuo"));
     //测试
     public static final Item test = new test(new Item.Properties().stacksTo(1))
             .setRegistryName(location("test"));
@@ -196,6 +199,7 @@ public class ItemList {
         itemList.put("xieedijia", xieedijia);
         itemList.put("sailuo", sailuo);
         itemList.put("genshin_impack", genshin_impack);
+        itemList.put("xuwangzhinuo", xuwangzhinuo);
         itemList.put("test", test);
     }
 }
