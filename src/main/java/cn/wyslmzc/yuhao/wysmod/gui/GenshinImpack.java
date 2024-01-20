@@ -17,6 +17,10 @@ public class GenshinImpack extends GUIBase {
     private static final ResourceLocation genshin5 = new ResourceLocation(WysMod.modId + ":textures/hud/genshin_impack_5.png");
     private static int genshin_impack_alpha = 0;
 
+    public GenshinImpack() {
+        super();
+    }
+
     @Override
     public void render(RenderGameOverlayEvent event, PlayerEntity player) {
         int posX = event.getWindow().getWidth() / 2;

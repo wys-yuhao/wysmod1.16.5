@@ -8,6 +8,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 
 public class IronMan extends GUIBase {
+    public IronMan() {
+    }
+
     @Override
     public void render(RenderGameOverlayEvent event, PlayerEntity player) {
         int posX = event.getWindow().getWidth() / 2;
