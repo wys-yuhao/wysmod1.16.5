@@ -31,12 +31,5 @@ public class WysMod {
     }
 
     private void onServerStarting(final FMLServerStartingEvent event) {
-        /*
-        event.getServer().setMotd("五元素幸运方块Mod服务器");
-        event.getServer().setPort(25565);
-        event.getServer().sendMessage(
-                new StringTextComponent("Port: " + event.getServer().getPort()),
-                UUID.randomUUID());
-         */
     }
 }

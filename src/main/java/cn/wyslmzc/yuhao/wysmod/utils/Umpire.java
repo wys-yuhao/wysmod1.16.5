@@ -11,6 +11,10 @@ import java.util.Objects;
 
 public class Umpire {
     public static void send(World world, PlayerEntity player, String message) {
+        if (!world.isClientSide()) {
+            return;
+        }
+
         for (PlayerEntity umpire : world.players()) {
             if (umpire.getTeam() == null) {
                 return;

@@ -18,6 +18,7 @@ public class JoinWorldEvent {
             return;
         }
 
+        PropUtils.runCommand(world, "gamerule sendCommandFeedback false");
 
         PropUtils.runCommand(world, "team add red");
         PropUtils.runCommand(world, "team add blue");
@@ -27,11 +28,13 @@ public class JoinWorldEvent {
         PropUtils.runCommand(world, "team modify blue color aqua");
         PropUtils.runCommand(world, "team modify red seeFriendlyInvisibles true");
         PropUtils.runCommand(world, "team modify blue seeFriendlyInvisibles true");
-        PropUtils.runCommand(world, "gamerule sendCommandFeedback false");
 
         PropUtils.runCommand(world, "team add umpire");
         PropUtils.runCommand(world, "team modify umpire friendlyFire false");
         PropUtils.runCommand(world, "team modify umpire color gold");
         PropUtils.runCommand(world, "team modify umpire seeFriendlyInvisibles true");
+
+        //感谢消息
+        PropUtils.runCommand(world, "tellraw @a {\"text\":\"感谢游玩五元素TEAM制作的全明星幸运方块\",\"color\":\"gold\"");
     }
 }

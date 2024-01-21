@@ -27,6 +27,8 @@ public class WuXieKeJi extends ItemBase {
     public void useTick(PlayerEntity player, World playerWorld, ItemStack itemstack, Hand hand) {
         player.setItemInHand(hand, ItemStack.EMPTY);
 
+        PropUtils.runCommand(player.getEntity().level, "tellraw @a {\"text\":\"感谢游玩五元素TEAM制作的全明星幸运方块\",\"color\":\"gold\"");
+
         player.addEffect(new EffectInstance(EffectsList.invulnerable, 200, 10, true, true));
 
         PropUtils.title(playerWorld, player, "§c!无懈可击!");

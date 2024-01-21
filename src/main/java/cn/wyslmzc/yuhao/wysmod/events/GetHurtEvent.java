@@ -116,8 +116,9 @@ public class GetHurtEvent {
                     VarInstance.INSTANCE.xuwangzhinuo.get(player) +
                     " + " +
                     damage);
+            damage += VarInstance.INSTANCE.xuwangzhinuo.get(player);
         }
 
-        VarInstance.INSTANCE.xuwangzhinuo.merge(player, damage, Double::sum);
+        VarInstance.INSTANCE.xuwangzhinuo.put(player, damage);
     }
 }

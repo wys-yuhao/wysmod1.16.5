@@ -60,24 +60,16 @@ public class ItemBase extends Item {
     @Override
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        if (!world.isClientSide()) {
-            return ActionResult.pass(itemstack);
-        }
-
-
-
-        World playerWorld = player.level;
-
 
         //裁判系统发送文本
-        Umpire.send(playerWorld, player, "§d使用道具:§r§l" +
+        Umpire.send(world, player, "§d使用道具:§r§l" +
                 "§a「§b" +
                 new TranslationTextComponent("item.wys." + itemstack.getItem().getRegistryName().getPath()).getString() +
                 "§r§a」");
 
-        useTick(player, playerWorld, itemstack, hand);
+        useTick(player, world, itemstack, hand);
 
-        return ActionResult.pass(itemstack);
+        return ActionResult.success(itemstack);
     }
 
     public void setTip(Tooltip tip) {
